@@ -27,14 +27,10 @@ percentage_error_mae = ( mae_value / np.mean(processed_df['Sale']) ) * 100
 mse_value = np.sqrt(mse_value)
 percentage_error_mse = ( mse_value / np.mean(processed_df['Sale']) ) * 100
 
-# accuracy
-percentage_accuracy_mae = 100 - percentage_error_mae
-percentage_accuracy_mse = 100 - percentage_error_mse
-
 
 if __name__ == "__main__":
-    print(f'Percentage accuracy: {percentage_accuracy_mae}')
-    print(f'Percentage accuracy: {percentage_accuracy_mse}')
+    print(f'Percentage error: {percentage_error_mae}')
+
     
     user_inputs = [59.3, 46.1, 1062, 1081.4]
     user_inputs_arr = np.array([user_inputs,]) # 2d ndarray as data for df
