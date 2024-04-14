@@ -24,7 +24,7 @@ tab_names = ['Main page', 'About']
 tab1, tab2 = st.tabs(tabs=tab_names)
 
 with tab1:
-
+    
     st.markdown('##### Enter all the respective values, and let the machine learning model predict the sales for you :smile:')
 
     x1 = st.number_input(label='Average weekly expenses (On a scale of 0-60 Grands)', min_value=0, max_value=60, key='avg_w_exp')
@@ -49,5 +49,5 @@ with tab2:
     st.subheader('About this app...')
     st.write("""Introducing Sales Nexus, a cutting-edge app revolutionizing sales forecasting. With Sales Nexus, simply input your weekly advertising expenses, TV ad spend, average weekly expenses, and radio ads frequency, and let our advanced linear regression algorithm do the rest. By harnessing the power of machine learning, Sales Nexus predicts the number of products you can expect to sell in a week with remarkable accuracy. Say goodbye to guesswork and hello to data-driven decision-making with Sales Nexus.""")
 
-    st.write(f':orange[Disclaimer:] The prediction of this machine learning app is :orange[{round(pam)}] percent only!')
+    st.write(f':orange[Disclaimer:] The error percentage of this app is :orange[{round(pam)}] percent! So, it is accurate to a considerable extent, but it is not that accurate!')
     st.write(f'This app is just a prototype designed, built, and made for University group activity/group project only :sweat_smile:')
