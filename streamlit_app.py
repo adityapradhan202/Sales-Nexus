@@ -49,5 +49,5 @@ with tab2:
     st.subheader('About this app...')
     st.write("""Introducing Sales Nexus, a cutting-edge app revolutionizing sales forecasting. With Sales Nexus, simply input your weekly advertising expenses, TV ad spend, average weekly expenses, and radio ads frequency, and let our advanced linear regression algorithm do the rest. By harnessing the power of machine learning, Sales Nexus predicts the number of products you can expect to sell in a week with remarkable accuracy. Say goodbye to guesswork and hello to data-driven decision-making with Sales Nexus.""")
 
-    st.write(f':orange[Disclaimer:] The error percentage of this app is :orange[{round(pem)}] percent! So, it is accurate to a considerable extent, but it is not that accurate!')
+    st.write(f':orange[Disclaimer:] The error percentage of this app is :orange[{round(pem, 2)}] percent! So, it is accurate to a considerable extent, but it is not that accurate!')
     st.write(f'This app is just a prototype designed, built, and made for University group activity/group project only :sweat_smile:')
